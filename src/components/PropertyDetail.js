@@ -144,7 +144,7 @@ const PropertyDetail = ({PropertyData}) => {
                     <div className="font-semibold text-xl mb-2">Need help?</div>
                     <p>Looking for support, please contact us!</p>
 
-                    <div class="flex inline-flex items-center pt-4 content-center">
+                    <div class="inline-flex items-center pt-4 content-center">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.9213 1.1512L1.89831 1.37598C1.35599 1.43624 0.937753 1.86637 0.994698 2.40904C1.13706 3.76568 1.80754 6.44067 4.683 9.31616C7.55845 12.1916 10.2338 12.8625 11.5907 13.005C12.1335 13.0621 12.5637 12.6438 12.624 12.1014L12.8488 10.0786C12.9001 9.61628 12.6719 9.16758 12.2679 8.93682L10.8189 8.10901C10.3621 7.84808 9.78719 7.92508 9.4152 8.29707L9.04344 8.66883C8.76764 8.94463 8.37016 9.06136 8.01759 8.89435C7.59992 8.69648 6.99617 8.32951 6.33333 7.66661C5.67043 7.00377 5.30347 6.40007 5.1056 5.98235C4.93861 5.62982 5.05532 5.23232 5.33115 4.9565L5.70289 4.58475C6.07486 4.21277 6.15191 3.63786 5.89093 3.18108L5.06315 1.73203C4.83238 1.32807 4.38368 1.09983 3.9213 1.1512Z" stroke="#161616" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
