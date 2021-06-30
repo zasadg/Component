@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { PropertyData } from "./PropertyData";
+import PropertyList from "./PropertyList";
+import PropertyCard from "./components/PropertyCard";
+import PropertyDetail from "./components/PropertyDetail";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  return (
+    // <PropertyList PropertyData = {PropertyData}/>
+     <PropertyDetail PropertyData = {PropertyData} />
+  )
+
+}
 export default App;
