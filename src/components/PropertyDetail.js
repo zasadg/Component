@@ -172,7 +172,7 @@ const PropertyDetail = ({ PropertyData }) => {
           <p>
             <span class="text-gray-900 ml-2">{PropertyData[0].title}</span>{" "}
           </p>
-          <button className="text-primary-03 text-sm font-semibold ml-8">
+          <button className="text-primary-03 text-md font-semibold ml-8">
             Map view
           </button>
         </div>
@@ -299,7 +299,6 @@ const PropertyDetail = ({ PropertyData }) => {
       </div>
       <div className="section-3 px-5 py-4">
         <div className="font-semibold text-xl mb-2">Agent info</div>
-
         <div class="flex items-center">
           <div className="flex flex-wrap justify-center">
             <div className="agent-avatar">
@@ -317,7 +316,7 @@ const PropertyDetail = ({ PropertyData }) => {
             <span class="text-gray-400 font-semibold">
               {PropertyData[0].agenttype}
             </span>
-            <div class="flex items-center pt-1">
+            <button class="flex items-center pt-1">
               <svg
                 width="16"
                 height="16"
@@ -338,7 +337,7 @@ const PropertyDetail = ({ PropertyData }) => {
                   {PropertyData[0].agentphone}
                 </span>{" "}
               </p>
-            </div>
+            </button>
           </div>
         </div>
       </div>
