@@ -5,7 +5,7 @@ const PropertyDetail = ({ PropertyData }) => {
     <div className="w-full max-w-md w-full mx-auto bg-white shadow-md rounded-md grid grid-cols-1 divide-y-4 divide-gray-100">
       <div className="section-1">
         <div className="nav px-5 clearfix">
-          <div className="button uppercase float-left py-5">
+          <button className="button uppercase float-left py-5">
             <svg
               width="24"
               height="24"
@@ -21,12 +21,12 @@ const PropertyDetail = ({ PropertyData }) => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
-          <div className="button rounded-full h-3 w-3 circle bg-green inline-flex float-right items-center text-primary-03 text-md py-5 font-semibold">
+          </button>
+          <button className="button rounded-full h-3 w-3 circle bg-green inline-flex float-right items-center text-primary-03 text-md py-5 font-semibold">
             view details
             <svg
-              width="14"
-              height="14"
+              width="16"
+              height="16"
               viewBox="0 0 16 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const PropertyDetail = ({ PropertyData }) => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </button>
         </div>
         <img
           className="w-full"
