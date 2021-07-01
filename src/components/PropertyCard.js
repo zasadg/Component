@@ -24,7 +24,7 @@ const PropertyCard = ({
               <div className="mask"></div>
               <img src={imageUrl} className="rounded-md" alt="rear house" />
             </div>
-            <div class="absolute m-3 px-2 py-1 rounded-md bg-primary">
+            <div className="absolute m-3 px-2 py-1 rounded-md bg-primary">
               <p className="text-md text-white text-left font-semibold">
                 {formationPrice}
               </p>

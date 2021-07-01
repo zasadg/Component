@@ -22,7 +22,7 @@ const PropertyDetail = ({ PropertyData }) => {
               />
             </svg>
           </div>
-          <div className="button rounded-full h-3 w-3 circle bg-green inline-flex float-right items-center text-primary-03 text-md py-5">
+          <div className="button rounded-full h-3 w-3 circle bg-green inline-flex float-right items-center text-primary-03 text-md py-5 font-semibold">
             view details
             <svg
               width="14"
