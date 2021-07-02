@@ -5,8 +5,8 @@ import PropertyCard from "./components/PropertyCard";
 import PropertyDetail from "./components/PropertyDetail";
 function App() {
   return (
-    // <PropertyList PropertyData = {PropertyData}/>
-    <PropertyDetail PropertyData={PropertyData} />
+    <PropertyList PropertyData = {PropertyData}/>
+    // <PropertyDetail PropertyData={PropertyData} />
   );
 }
 export default App;
