@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/PropertyCard.css";
-import { bool } from "prop-types";
 const PropertyCard = ({
   imageUrl,
   imageAlt,
@@ -20,10 +19,17 @@ const PropertyCard = ({
     <div className="w-full max-w-full w-full mx-auto bg-white border-b-2 rounded-none border-gray-100">
       <div className="bg-cover bg-center px-4 py-4">
         <div class="col-span-4 text-md font-semibold">
+        <div className="inline-flex items-center">
           <p>{title}</p>
+            <svg width="4" height="14" viewBox="0 0 4 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute right-0 mr-6">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.16911 12.4958C3.16911 11.8489 2.64473 11.3245 1.99788 11.3245C1.35103 11.3245 0.82666 11.8489 0.82666 12.4958C0.82666 13.1426 1.35103 13.667 1.99788 13.667C2.64473 13.667 3.16911 13.1426 3.16911 12.4958ZM3.16911 7.00037C3.16911 6.35353 2.64473 5.82915 1.99788 5.82915C1.35103 5.82915 0.82666 6.35353 0.82666 7.00037C0.82666 7.64722 1.35103 8.1716 1.99788 8.1716C2.64473 8.1716 3.16911 7.64722 3.16911 7.00037ZM3.16911 1.50485C3.16911 0.858 2.64473 0.333626 1.99788 0.333626C1.35103 0.333626 0.82666 0.858 0.82666 1.50485C0.82666 2.1517 1.35103 2.67607 1.99788 2.67607C2.64473 2.67607 3.16911 2.1517 3.16911 1.50485Z" fill="#333333"/>
+            </svg>
+          </div>
         </div>
-        <div className="grid grid-cols-3 gap-1 pt-2">
+        <div className="grid grid-cols-3 gap-1 pt-2 items-center">
+          <div className="image-cover">
           <img src={imageUrl} className="rounded-md" alt="rear house" />
+          </div>
           <div class="col-span-2 ml-3">
             <div className="item-1 ">
               <div className="inline-flex items-center">
@@ -70,8 +76,8 @@ const PropertyCard = ({
                 </p>
               </div>
             </div>
-            <div className="item-2">
-              <div className="inline-flex items-center ">
+            <div className="item-2 items-center">
+              <div className="inline-flex items-center">
                 <svg
                   width="20"
                   height="20"
@@ -95,10 +101,8 @@ const PropertyCard = ({
                 <p>
                   <span class="text-gray-900 ml-2 text-sm">{time}</span>{" "}
                 </p>
-              </div>
-            </div>
             <div className="item-3">
-              <div className="bg-green-50 rounded-full px-4  items-center inline-flex">
+              <div className="bg-green-50 rounded-full ml-2 px-2 py-0.5 items-center inline-flex">
                 <svg
                   width="12"
                   height="12"
@@ -111,10 +115,16 @@ const PropertyCard = ({
                     fill="#42A87A"
                   />
                 </svg>
-                <p className="ml-2 text-green-500 text-sm font-semibold">
+                <p className="ml-2 text-green-500 text-xs font-semibold">
                   {showing}
                 </p>
               </div>
+              </div>
+            </div>
+            </div>
+            <div className="inline-flex pt-0.5">
+              <button className="bg-gray-100 py-1.5 px-6 rounded-md font-semibold text-sm text-gray-700">Cancel</button>
+              <button className="bg-primary-01 py-1.5 px-7 rounded-md font-semibold text-sm text-white ml-2">Confirm</button>
             </div>
           </div>
         </div>
